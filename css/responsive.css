@@ -10,6 +10,21 @@
         height: 55vh;
         margin-bottom: 0px;
     }
+    #piguin{
+        margin-top: 175px;
+    }
+
+    .paragraph{
+        font-size: 2em;
+    }
+
+    .loc h2{
+        font-size: 3em;
+    }
+
+    .titulo{
+        font-size: 3.2em !important;
+    }
 
     .reserva{
         background-repeat: no-repeat;
@@ -36,7 +51,7 @@
 
     footer{
         height: 110px;
-        font-size: 2.2em;
+        font-size: 2.2em !important;
     }
 
 }
