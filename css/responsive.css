@@ -147,24 +147,24 @@
         justify-content: space-between;
     }
     
-    .navbar{
+    /*.navbar{
         width: 0px;
         height: 0px;
-    }
+    }*/
     
-    .navbar a{
+    /*.navbar a{
         display: none;
-    }
+    }*/
 
-    #menu{
+    /*#menu{
         display: inline;
         margin-left: 10px;
-    }
+    }*/
     
-    .align{
+    /*.align{
         display: flex;
         flex-direction: row-reverse;
-    }
+    }*/
     
     .home::before{
         height: 55vh;
@@ -193,7 +193,7 @@
         margin-bottom: 0px !important;
     }
     .button{
-        margin-top: 25%;
+        margin-top: 5%;
     }
     .box-control{
     width: 85%;
