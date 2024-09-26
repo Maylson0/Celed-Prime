@@ -2,6 +2,11 @@
 
 /*Telas Maiores*/
 @media(min-width: 2559px){
+
+    .nav-link{
+        font-size: 1.7em;
+    }
+
     .home::before{
         height: 55vh;
     }

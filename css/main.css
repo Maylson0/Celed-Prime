@@ -29,7 +29,7 @@ header{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 125px;
+    height: auto;
     background-image: linear-gradient(to right, var(--azulEscuro), var(--azulClaro));
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
     z-index: 1;
@@ -58,15 +58,8 @@ h1#title{
     
 }
 
-
-/*.navbar{
-    list-style-type: none;
-    white-space: nowrap;
-}*/
-
-#menu{
-    color: white;
-    display: none;
+.navbar{
+    margin-bottom: 0px;
 }
 
 .navbar li{
@@ -95,7 +88,7 @@ h1#title{
 
 main{
     width: 100%;
-    margin-top: 125px;
+    margin-top: 105px;
 }
 
 .home{
@@ -115,7 +108,7 @@ main{
     content: '';
     position: absolute;
     width: 100%;
-    height: 79vh;
+    height: 80vh;
     background-color: rgb(5, 2, 211, 0.3);
 }
 
