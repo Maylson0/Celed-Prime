@@ -48,7 +48,7 @@
         height: 80px !important;
         font-size: 2em !important;
     }
-
+    
     .button{
         height: 130px;
         font-size: 2em;
@@ -58,11 +58,20 @@
         height: 110px;
         font-size: 2.2em !important;
     }
-
+    
 }
 
+@media (max-width: 1260px) {
+    .home::before{
+        height: 92vh;
+    }
+}
 
-@media(max-width: 1090px){
+@media(max-width: 1030px){
+    .home::before{
+        height: 66vh;
+    }
+
     .galeria{
         display: grid;
         height: 100vh;
@@ -152,27 +161,9 @@
         justify-content: space-between;
     }
     
-    /*.navbar{
-        width: 0px;
-        height: 0px;
-    }*/
-    
-    /*.navbar a{
-        display: none;
-    }*/
-
-    /*#menu{
-        display: inline;
-        margin-left: 10px;
-    }*/
-    
-    /*.align{
-        display: flex;
-        flex-direction: row-reverse;
-    }*/
     
     .home::before{
-        height: 55vh;
+        height: 57vh;
     }
     
     
@@ -181,7 +172,7 @@
         height:300px;
         margin-top: 0px;
     }
-
+    
     .gif{ 
         height: 45vh;
     }
@@ -202,14 +193,25 @@
     }
     .box-control{
     width: 85%;
+}
+
+}
+
+@media (max-width: 900px) {
+    .home::before{
+        height: 65vh;
     }
-    
 }
 
 @media (max-width: 768px) {
     .box-main{
         width: 45%; 
     }
+
+    .home::before{
+        height: 66vh;
+    }
+
 }
 
 
@@ -314,6 +316,25 @@
 
 
 @media (max-width: 567px) {
+    .name{
+        font-size: 0.5em;
+    }
+
+    #icon-nav{
+        margin-top: 25px;
+    }
+
+    #piguin{
+        width: 250px;
+        height: 220px;
+        margin-top: 10px;
+    }
+
+
+    #menu{
+        font-size: 2em;
+    }
+
     .facilidades{
         flex-direction: column;
     }
