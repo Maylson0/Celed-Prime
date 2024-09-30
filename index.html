@@ -12,22 +12,39 @@
 </head>
 <body>
     <header>    
-            <a href="">
-                <div class="name">
-                    <i class="material-icons" id="icon-nav">pool</i>
-                    <h1 id="title">Celed Prime</h1>
+            <nav class="navbar navbar-expand-lg w-100">
+                <a class="navbar-brand" href="">
+                    <div class="name">
+                        <i class="material-icons" id="icon-nav">pool</i>
+                        <h1 id="title">Celed Prime</h1>
+                    </div>
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+                    <i class="material-icons" id="menu">menu</i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#facilidades">Facilidades</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#galeria">Galeria</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#loc">Localização</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#login">Reserva</a>
+                      </li>
+                    </ul>
                 </div>
-            </a>
-            <div class="align">
-                <i class="material-icons" id="menu">menu</i>
-                <ul class="navbar">
-                    <li><a href="#home" class="list">Home</a></li>
-                    <li><a href="#facilidades" class="list">Facilidades</a></li>
-                    <li><a href="#galeria" class="list">Galeria</a></li>
-                    <li><a href="#loc" class="list">Como chegar</a></li>
-                    <li class="dif"><a href="#login" class="list">Reservar</a></li>
-                </ul>
-            </div>
+                
+            </nav>
+            
     </header>
     <main>
         <section class="home" id="home">
@@ -43,12 +60,12 @@
         <div class="fundo-facilidades">
             <section class="facilidades" id="facilidades">
                 <div class="esquerda">
-                    <h2>Piscina</h2>
+                    <h2 class="titulo">Piscina</h2>
                     <img src="imgs/pscina 1.jpg" alt="piscina" class="piscina">
                 </div>
 
                 <div class="direita">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur mollitia omnis ab iusto,
+                    <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur mollitia omnis ab iusto,
                         corrupti, nemo possimus quod, debitis eum voluptatem nostrum doloribus voluptatum deleniti amet
                         molestiae nulla quo alias fugiat. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         Accusantium, reprehenderit! Eveniet porro vitae eligendi est inventore facere consequuntur
@@ -60,12 +77,12 @@
 
             <section class="facilidades-rev">
                 <div class="esquerda">
-                    <h2>Piscina</h2>
+                    <h2 class="titulo">Piscina</h2>
                     <img src="imgs/psicina2.jpg" alt="piscina" class="piscina">
                 </div>
 
                 <div class="direita">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur mollitia omnis ab iusto,
+                    <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur mollitia omnis ab iusto,
                         corrupti, nemo possimus quod, debitis eum voluptatem nostrum doloribus voluptatum deleniti amet
                         molestiae nulla quo alias fugiat. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         Accusantium, reprehenderit! Eveniet porro vitae eligendi est inventore facere consequuntur
@@ -76,12 +93,12 @@
 
             <section class="facilidades">
                 <div class="esquerda">
-                    <h2>Piscina</h2>
+                    <h2 class="titulo">Piscina</h2>
                     <img src="imgs/piscina 3.jpg" alt="piscina" class="piscina">
                 </div>
 
                 <div class="direita">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur mollitia omnis ab iusto,
+                    <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur mollitia omnis ab iusto,
                         corrupti, nemo possimus quod, debitis eum voluptatem nostrum doloribus voluptatum deleniti amet
                         molestiae nulla quo alias fugiat. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         Accusantium, reprehenderit! Eveniet porro vitae eligendi est inventore facere consequuntur
@@ -91,30 +108,35 @@
             </section>
         </div>
 
-        <section class="galeria" id="galeria">
-
-            <div class="a1" style="border: 1px solid transparent;">
-                <img id="THEGOAT" src="imgs/goat.gif" alt="">
-            </div>
-    
-            <div class="a2">
-            </div>
-    
-            <div class="a3">
-    
-            </div>
-    
-            <div class="a4">
-
-            </div>
-    
-            <div class="a5">
-            </div>
-    
-            <div class="a6">
-            </div>
-    
-        </section>
+        <section class="boot-galeria"> 
+            <h1>Galeria</h1>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imgs/Fundoabacaxi.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/goat.gif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/psicina2.jpg" class="d-block w-100" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </section>
+        
 
         <section class="loc" id="loc">
             <h2>Venha nos fazer uma visita.</h2>
@@ -125,7 +147,7 @@
         </section>
         <section class="reserva" id="login">
             <h2 class="mb-5 title">Faça sua reserva</h2>
-            <div class="h-75 box-main border rounded">
+            <div class="box-main border rounded">
                 <div class="box-control">
                     <form action="" method="post">
                         <div class="formulario text-center form-group">
@@ -142,7 +164,7 @@
                         </div>
                         <div class="formulario form-group text-center">
                             <label for="hora">Hora:</label>
-                            <input type="time" class="form-control" id="hora" name="hora" required>
+                            <input type="time" class="form-control" id="hora" name="hora" placeholder="Digite a hora" required>
                         </div>
                         <button class="button bg-warning btn py-3">CLIQUE AQUI</button>
                     </form>
@@ -156,5 +178,10 @@
     <footer>
         <p>Página criada por:  <a target="_blank" href="https://github.com/gabrielsndev">Gabriel</a>,  <a target="_blank" href="https://github.com/Maylson0">Maylson</a>  e  <a target="_blank" href="http://github.com/marioneeto">Mário</a> <span>&copy;</span></p>
     </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>-
 </body>
 </html>

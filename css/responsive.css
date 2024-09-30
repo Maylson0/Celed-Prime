@@ -2,106 +2,74 @@
 
 /*Telas Maiores*/
 @media(min-width: 2559px){
+
+    .nav-link{
+        font-size: 1.7em;
+    }
+
     .home::before{
         height: 55vh;
     }
+
     .gif{
         height: 55vh;
         margin-bottom: 0px;
     }
-}
-
-@media (max-width: 1300px){
-    .form-group{
-        margin-bottom: 0px !important;
-    }
-    .button{
-        margin-top: 15px;
-    }
-    .box-control{
-    width: 85%;
-    }
-}
-
-
-@media(max-width: 1090px){
-    .galeria{
-        display: grid;
-        height: 100vh;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "a1 a1 a1 a1"
-        "a1 a1 a1 a1"
-        "a6 a6 a6 a6"
-        "a2 a3 a4 a5"
-        "a2 a3 a4 a5"
-        ;
-        gap: 2%;
+    #piguin{
+        margin-top: 175px;
     }
 
-    .a1{
-        background-color: transparent;
-        grid-area: a1;
-        border-radius: 26px;
-        width: 21%;
-        height: 100%;
-        margin: auto;
+    .paragraph{
+        font-size: 2em;
     }
 
-    #THEGOAT{
-        height: 72%;
-        width: 133%;
-        bottom: 2px;
-        left: -27px;
+    .loc h2{
+        font-size: 3em;
     }
 
-
-    .a2{
-        background-color: rgb(215, 26, 26);
-        grid-area: a2;
-        width: 100%;
-        height: 79%;
-        border-radius: 9px;
-        margin: auto;
-    }
-    
-    .a3{
-        background-color: rgb(221, 233, 0);
-        grid-area: a3;
-        margin: auto;
-        border-radius: 9px;
-        width: 100%;
-        height: 79%;
-    }
-    
-    
-    .a4{
-        background-color: rgb(0, 118, 118);
-        grid-area: a4;
-        margin: auto;
-        border-radius: 9px;
-        width: 100%;
-        height: 79%;
-    }
-    
-    
-    .a5{
-        background-color: rgb(38, 0, 255);
-        grid-area: a5;
-        margin: auto;
-        border-radius: 9px;
-        width: 100%;
-        height: 79%;
+    .titulo{
+        font-size: 3.2em !important;
     }
 
-    .a6{
-        grid-area: a6;
-        width: 43%;
-        height: 161%;
-        position: relative;
-        bottom: 50%;
+    .reserva{
+        background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    .title{
+        font-size: 5em;
+    }
+
+    label{
+        font-size: 2em;
+    }
+
+    input{
+        height: 80px !important;
+        font-size: 2em !important;
+    }
+    
+    .button{
+        height: 130px;
+        font-size: 2em;
+    }
+
+    footer{
+        height: 110px;
+        font-size: 2.2em !important;
+    }
+    
+}
+
+@media (max-width: 1260px) {
+    .home::before{
+        height: 92vh;
+    }
+}
+
+@media(max-width: 1030px){
+    .home::before{
+        height: 66vh;
     }
 }
 
@@ -113,28 +81,10 @@
         display: flex;
         justify-content: space-between;
     }
-
-    .navbar{
-        width: 0px;
-        height: 0px;
-    }
-
-    .navbar a{
-        display: none;
-    }
-
-    #menu{
-        display: inline;
-        margin-left: 10px;
-    }
-
-    .align{
-        display: flex;
-        flex-direction: row-reverse;
-    }
+    
     
     .home::before{
-        height: 55vh;
+        height: 57vh;
     }
     
     
@@ -143,26 +93,73 @@
         height:300px;
         margin-top: 0px;
     }
-
+    
     .gif{ 
-       height: 45vh;
+        height: 45vh;
     }
-
+    
     .content h2{
         font-size: 2.5em;
     }
-
+    
     .content p{
         font-size: 2.5em;
     }
     
+    .form-group{
+        margin-bottom: 0px !important;
+    }
+    .button{
+        margin-top: 5%;
+    }
+    .box-control{
+    width: 85%;
+}
 
+    /* MUDANÇA GALERIA */
+    .boot-galeria h1{
+        border-bottom: solid 3px #EBBB30;
+        margin: auto;
+        width: 14%;
+        margin-bottom: 0.5%;
+    }
+
+    .carousel{
+        position: relative;
+        width: 59%;
+        margin: auto;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .home::before{
+        height: 65vh;
+    }
 }
 
 @media (max-width: 768px) {
     .box-main{
         width: 45%; 
     }
+
+    .home::before{
+        height: 66vh;
+    }
+
+    .boot-galeria h1{
+        border-bottom: solid 3px #EBBB30;
+        margin: auto;
+        width: 18%;
+        margin-bottom: 0.5%;
+    }
+
+    .carousel{
+        position: relative;
+        width:72%;
+        margin: auto;
+    }
+
 }
 
 
@@ -192,81 +189,41 @@
         height: 55px;
     }
 
-    .galeria{
-        display: grid;
-        height: 100vh;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 1fr 1fr 1fr 1fr  ;
-        grid-template-areas: 
-        "a1 a1 "
-        "a6 a6 "
-        "a2 a3 "
-        "a5 a4 "
-        ;
-        gap: 1%;
-        row-gap: 2%;
+     /* MUDANÇA GALERIA */
+     .boot-galeria h1{
+        border-bottom: solid 3px #EBBB30;
+        margin: auto;
+        width: 41%;
+        margin-bottom: 0.5%;
     }
-    
-    .a1{
-        background-color: transparent;
-        grid-area: a1;
-        border-radius: 26px;
-        width: 32%;
-        height: 100%;
-        padding: 1%;
+
+    .carousel{
+        position: relative;
+        width: 93%;
         margin: auto;
     }
-
-    .a2{
-        background-color: rgb(215, 26, 26);
-        grid-area: a2;
-        width: 64%;
-        height: 100%;
-        border-radius: 9px;
-        margin: 0px 22%;
-    }
-
-    .a3{
-        background-color: rgb(221, 233, 0);
-        grid-area: a3;
-        margin: 0px 8%;
-        border-radius: 9px;
-        width: 64%;
-        height: 100%;
-    }
-
-    .a4{
-        background-color: rgb(0, 118, 118);
-        grid-area: a4;
-        margin: 0px 8%;
-        border-radius: 9px;
-        width: 64%;
-        height: 100%;
-    }
-
-    .a5{
-        background-color: rgb(38, 0, 255);
-        grid-area: a5;
-        width: 64%;
-        height: 100%;
-        border-radius: 9px;
-        margin: 0px 22%;
-    }
-
-    .a6{
-        grid-area: a6;
-        width: 68%;
-        height: 100%;
-        bottom: 10%;
-    }
-
-
-
 }
 
-
-
 @media (max-width: 567px) {
+    .name{
+        font-size: 0.5em;
+    }
+
+    #icon-nav{
+        margin-top: 25px;
+    }
+
+    #piguin{
+        width: 250px;
+        height: 220px;
+        margin-top: 10px;
+    }
+
+
+    #menu{
+        font-size: 2em;
+    }
+
     .facilidades{
         flex-direction: column;
     }
